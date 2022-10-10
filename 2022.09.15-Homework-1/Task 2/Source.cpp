@@ -1,7 +1,6 @@
 #include <iostream>;
 
-
-int main()
+int main(int argc, char* argv[])
 {
 	
 	int n = 0;
@@ -9,5 +8,5 @@ int main()
 	std::cin >> n;
 	std::cin >> k;
 	std::cout << k / n << std::endl;
-	return 0;
+	return EXIT_SUCCESS;
 }

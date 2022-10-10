@@ -1,8 +1,6 @@
 #include <iostream>;
 
-
-
-int main()
+int main(int argc, char* argv[])
 {
 	int a = 0;
 	int b = 0;
@@ -17,5 +15,5 @@ int main()
 	std::cin >> e;
 	std::cin >> f;
 	std::cout << (d * 360 + e * 60 + f) - (a * 360 + b * 60 + c) << std::endl;
-	return 0;
+	return EXIT_SUCCESS;
 }

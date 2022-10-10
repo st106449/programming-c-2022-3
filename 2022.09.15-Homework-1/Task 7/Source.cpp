@@ -1,8 +1,6 @@
 #include <iostream>;
 
-
-
-int main()
+int main(int argc, char* argv[])
 {
 	int a = 0;
 	int b = 0;
@@ -13,5 +11,5 @@ int main()
 	a = b;
 	b = c;
 	std::cout << a << " " << b << std::endl;
-	return 0;
+	return EXIT_SUCCESS;
 }
