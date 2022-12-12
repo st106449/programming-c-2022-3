@@ -12,15 +12,15 @@ int main(int argc, char* argv[])
 	}
 	for (i = i; i != 0; i /= 10)
 	{
-		if (x / i == 1)
+		if (x - i >= 0)
 		{
 			n = 2 * n + 1;
+			x = x - i;
 		}
 		else
 		{
 			n = 2 * n;
 		}
-		x = x - i;
 	}
 	std::cout << n;
 	return EXIT_SUCCESS;
