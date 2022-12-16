@@ -1,31 +1,28 @@
 #include <iostream>
 #include <cstring>
 
-int max(char* s, int n)
+char strmax(char* s, int n,char max)
 {
-	if (n == 0)
+	if (s[n])
 	{
-		return 0;
+		if (s[n] >= max)
+		{
+			max = s[n];
+		}
+		return strmax(s, n + 1, max);
 	}
-	for (int i = 0; i < strlen(s)/2 + 1; ++i)
-	{   
-		if (s[i] == n)
-		{
-			return n;
-			break;
-		}
-		else
-		{
-			return max(s, n - 1);
-		}
+	else
+	{
+		return max;
 	}
 }
 
 int main(int argc, char* argv[])
 {
 	char s[1000];
-	int n = 9;
+	int n = 0;
+	char max = 0;
 	std::cin.getline (s, 1000);
-	std::cout << max(s, n);
+	std::cout << strmax(s, n,max);
 	return EXIT_SUCCESS;
 }

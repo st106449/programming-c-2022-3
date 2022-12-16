@@ -2,32 +2,24 @@
 
 int main(int argc, char* argv[])
 {
-	int a = 0;
-	int b = 0;
-	int c = 0;
-	int d = 0;
-	int e = 0;
-	int n = 0;
-	std::cin >> a;
-	std::cin >> b;
-	std::cin >> c;
-	std::cin >> d;
-	std::cin >> e;
-	for (int x = 0; x <= 1000; x++)
+	int n = 1;
+	std::cin >> n;
+	int l1 = 0;
+	int l = 1;
+	for (int i = 1; l1 <= n; ++i)
 	{
-		if (x != e)
+		for (int l = 1; l <= i; ++l)
 		{
-			n = n;
+			std::cout << i << " ";
+			++l1;
+			if (l1 == n)
+			{
+				l = i + 1;
+				l1 = n + 1;
+			}
+			
 		}
-		else if (a * x * x * x + b * x * x + c * x + d == 0)
-		{
-			++n;
-		}
-		else
-		{
-			n = n;
-		}
+
 	}
-	std::cout << n;
 	return EXIT_SUCCESS;
 }

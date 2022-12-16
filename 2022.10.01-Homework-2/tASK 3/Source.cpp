@@ -7,11 +7,11 @@ int main(int argc, char* argv[]) {
 	std::cin >> n >> k >> m;
 	if (n % k == 0)
 	{
-		std::cout << (n / k) * m * 2 << std::endl;
+		std::cout << (n / k) * m * 2;
 	}
 	else
 	{
-		std::cout << (n / k + 1) * m * 2 << std::endl;
+		std::cout << (n / k + 1) * m * 2;
 	}
 
 	return 0;

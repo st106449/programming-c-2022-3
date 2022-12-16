@@ -23,4 +23,3 @@ int main(int argc, char* argv[])
 	std::cout << min(a, b, c, d);
 	return EXIT_SUCCESS;
 }
-//return(fun(N-5)||fun(N-3));

@@ -1,13 +1,24 @@
 #include <iostream>
 #include <cstring>
 
-char zvzdc(char* s, int n)
+void zvzdc(char s)
 {
-	if (n == strlen(s) / 2 + 1)
+	char a;
+	std::cout << s;
+	if (std::cin >> a)
+	{
+		std::cout << "*";
+		zvzdc(a);
+	}
+	else
 	{
 		return;
 	}
-	char z{};
-	z[n+1] = "*"
-	
+}
+int main(int argc, char* argv[])
+{
+	char s='0';
+	std::cin >> s;
+	zvzdc(s);
+	return EXIT_SUCCESS;
 }

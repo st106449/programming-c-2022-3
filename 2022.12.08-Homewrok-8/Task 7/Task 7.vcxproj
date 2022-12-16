@@ -24,6 +24,7 @@
     <ProjectGuid>{f18ef656-7b11-4784-886e-c9019bfa4c22}</ProjectGuid>
     <RootNamespace>Task7</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Task 7 prikolniy</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

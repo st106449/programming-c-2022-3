@@ -11,8 +11,7 @@ int main(int argc, char* argv[])
 	{
 		a[i] = new int[m];
 	}
-	if (a != nullptr) 
-	{
+	if (a != nullptr) {
 		for (int i = 0; i < n; ++i)
 		{
 			for (int j = 0; j < m; ++j)
@@ -22,34 +21,22 @@ int main(int argc, char* argv[])
 		}
 		for (int i = 0; i < n; ++i)
 		{
-			int sum = 0;
-			for (int j = 0; j < m; ++j)
+			for (int j = 0; j <= (m-1)/2; ++j)
 			{
-				sum += a[i][j];
+				int c = a[i][j];
+				a[i][j] = a[i][m-j-1];
+				a[i][m-j-1] = c;
 			}
-			std::cout << sum << " ";
 		}
-		std::cout << std::endl;
-		for (int j = 0; j < m; ++j)
-		{
-			int sum = 0;
-			for (int i = 0; i < n; ++i)
-			{
-				sum += a[i][j];
-			}
-			std::cout << sum << " ";
-		}
-		std::cout << std::endl;
-		std::cout << std::endl;
 		for (int i = 0; i < n; ++i)
 		{
 			for (int j = 0; j < m; ++j)
 			{
-				std::cout << a[i][j]<< " ";
+				std::cout << a[i][j] << " ";
 			}
 			std::cout << std::endl;
 		}
-		delete[] a;
-		return EXIT_SUCCESS;
 	}
+	delete[] a;
+	return EXIT_SUCCESS;
 }

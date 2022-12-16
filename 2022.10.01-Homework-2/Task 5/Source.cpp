@@ -5,13 +5,17 @@ int main(int argc, char* argv[])
 	int n = 0;
 	std::cin >> n;;
 	//n= 4a - 4, a = (n+4)/4. a - сторона доски. ƒоска существует, если n делитс€ на 4.
+	if (n == 1)
+	{
+		std::cout << "YES";
+	}
 	if (n%4 == 0)
 	{
-		std::cout << "YES" << std::endl;
+		std::cout << "YES";
 	}
 	else
 	{
-		std::cout << "NO" << std::endl;
+		std::cout << "NO";
 	}
 	return EXIT_SUCCESS;
 }
