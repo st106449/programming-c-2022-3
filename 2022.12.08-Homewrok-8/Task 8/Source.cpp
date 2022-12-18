@@ -1,46 +1,31 @@
 #include <iostream>
 #include <cstring>
 
-int len(char s, int dlina)
+void skbc(char* s, int n)
 {
-	char a;
+	if (n == strlen (s))
+	{
+		return;
 
-	if (std::cin >> a)
-	{
-		return len(a, dlina + 1);
 	}
-	else
-	{
-		return dlina+ 1;
-	}
-}
-int skbc(char s, int it, int lenght)
-{
-	char a;
-	std::cout << s;
-	if (std::cin >> a)
-	{
-		if (it < lenght / 2)
+		if (n < strlen(s) / 2 - 1 || (n < strlen(s) / 2) && strlen(s) % 2 == 1)
 		{
-			std::cout << "(";
+			std::cout << s[n] << "(";
 		}
-		else if (it > lenght / 2)
+		else if (n > strlen(s)/2)
 		{
-			std::cout << ")";
+			std::cout << ")" << s[n];
 		}
-		skbc(a, it + 1, lenght);
-	}
-	else
-	{
-		return 1;
-	}
+		else
+		{
+			std::cout << s[n];
+		}
+		skbc(s, n + 1);
 }
 int main(int argc, char* argv[])
 {
-	char s;
-	std::cin >> s;
-	int dlina = 0;
-	int lenght = len(s, 1);
-	std::cout << lenght;
+	char s[1001];
+	std::cin.getline(s, 1001);
+	skbc(s, 0);
 	return EXIT_SUCCESS;
 }

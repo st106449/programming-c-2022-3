@@ -1,24 +1,19 @@
 #include <iostream>
 #include <cstring>
 
-void zvzdc(char s)
+void zvzdc()
 {
 	char a;
-	std::cout << s;
-	if (std::cin >> a)
-	{
-		std::cout << "*";
-		zvzdc(a);
-	}
-	else
+	std::cin >> a;
+	if (a == '\0')
 	{
 		return;
 	}
+	
 }
 int main(int argc, char* argv[])
 {
-	char s='0';
-	std::cin >> s;
-	zvzdc(s);
+
+	zvzdc();
 	return EXIT_SUCCESS;
 }
