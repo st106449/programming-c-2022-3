@@ -11,7 +11,7 @@ int main(int argc, char* argv[])
 	{
 		a[i] = new int[m];
 	}
-	if (a != nullptr) 
+	if (a != nullptr)
 	{
 		for (int i = 0; i < n; ++i)
 		{
@@ -45,9 +45,13 @@ int main(int argc, char* argv[])
 		{
 			for (int j = 0; j < m; ++j)
 			{
-				std::cout << a[i][j]<< " ";
+				std::cout << a[i][j] << " ";
 			}
 			std::cout << std::endl;
+		}
+		for (int i = 0; i < n; ++i)
+		{
+			delete[] a[i];
 		}
 		delete[] a;
 		return EXIT_SUCCESS;

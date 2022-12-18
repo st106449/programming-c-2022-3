@@ -17,7 +17,7 @@ int main(int argc, char* argv[])
 		int j = 0;
 		std::cin >> i;
 		std::cin >> j;
-		for (int s = i -1; s <= j-1; ++s)
+		for (int s = i - 1; s <= j - 1; ++s)
 		{
 			std::cout << a[s] << " ";
 		}

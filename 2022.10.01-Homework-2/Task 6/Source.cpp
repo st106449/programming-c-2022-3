@@ -13,11 +13,11 @@ int main(int argc, char* argv[])
 	(y1 > y2 ? dy = y1 - y2 : dy = y2 - y1);
 	if (x1 == x2 || y1 == y2 || dx == dy)
 	{
-		std::cout << "yes";
+		std::cout << "YES";
 	}
 	else
 	{
-		std::cout << "no";
+		std::cout << "NO";
 	}
 	return EXIT_SUCCESS;
 }

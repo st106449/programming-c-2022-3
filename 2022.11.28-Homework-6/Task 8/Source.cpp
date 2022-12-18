@@ -2,7 +2,7 @@
 
 int main(int argc, char* argv[])
 {
-	int a[100000] ;
+	int a[100000];
 	int n = 0;
 	std::cin >> n;
 	for (int i = 0; i < n; ++i)

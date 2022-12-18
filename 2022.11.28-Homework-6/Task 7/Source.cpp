@@ -22,14 +22,14 @@ int main(int argc, char* argv[])
 	}
 	for (int i = 0; i < n; ++i)
 	{
-		if (a[i]< a[min])
+		if (a[i] < a[min])
 		{
 			min = i;
 		}
 	}
 	for (int i = 0; i < n; ++i)
 	{
-		if (a[i]> a[max])
+		if (a[i] > a[max])
 		{
 			max = i;
 		}

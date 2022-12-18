@@ -15,7 +15,7 @@ int main(int argc, char* argv[])
 	{
 		b[i] = new int[m];
 	}
-	int** c= new int* [n];
+	int** c = new int* [n];
 	for (int i = 0; i < n; ++i)
 	{
 		c[i] = new int[m];
@@ -52,6 +52,14 @@ int main(int argc, char* argv[])
 		}
 		std::cout << std::endl;
 	}
-	delete[](a, b, c);
+	for (int i = 0; i < n; ++i)
+	{
+		delete[] a[i];
+		delete[] b[i];
+		delete[] c[i];
+	}
+	delete[] a;
+	delete[] b;
+	delete[] c;
 	return EXIT_SUCCESS;
 }

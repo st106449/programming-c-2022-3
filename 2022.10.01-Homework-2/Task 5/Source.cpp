@@ -9,7 +9,7 @@ int main(int argc, char* argv[])
 	{
 		std::cout << "YES";
 	}
-	if (n%4 == 0)
+	else if (n % 4 == 0)
 	{
 		std::cout << "YES";
 	}

@@ -33,4 +33,5 @@ int main(int argc, char* argv[])
 			std::cout << i << ' ';
 		}
 	}
+	return EXIT_SUCCESS;
 }

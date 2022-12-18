@@ -6,7 +6,7 @@ int main(int argc, char* argv[])
 	int b = 0;
 	int c = 0;
 	std::cin >> a >> b >> c;
-	if (a > b + c || b > a + c || c > a + b)
+	if (a >= b + c || b >= a + c || c >= a + b)
 	{
 		std::cout << "impossible" << std::endl;
 	}
@@ -40,20 +40,20 @@ int main(int argc, char* argv[])
 			std::cout << "obtuse" << std::endl;
 		}
 	}
-			else if (b >= a && b >= c)
-			{
-				if (a * a + c * c == b * b)
-				{
-					std::cout << "right" << std::endl;
-				}
-				else if (a * a + c * c > b * b)
-				{
-					std::cout << "acute" << std::endl;
-				}
-				else if (a * a + c * c < b * b)
-				{
-					std::cout << "obtuse" << std::endl;
-				}
-			}
-			return EXIT_SUCCESS;
+	else if (b >= a && b >= c)
+	{
+		if (a * a + c * c == b * b)
+		{
+			std::cout << "right" << std::endl;
+		}
+		else if (a * a + c * c > b * b)
+		{
+			std::cout << "acute" << std::endl;
+		}
+		else if (a * a + c * c < b * b)
+		{
+			std::cout << "obtuse" << std::endl;
+		}
+	}
+	return EXIT_SUCCESS;
 }

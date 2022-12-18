@@ -43,5 +43,5 @@ int main(int argc, char* argv[])
 	(c1 <= c2 ? fin = f : fin = d);
 	std::cout << fin;
 	return EXIT_SUCCESS;
-	
+
 }

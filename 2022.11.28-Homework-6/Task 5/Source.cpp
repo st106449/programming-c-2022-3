@@ -19,7 +19,7 @@ int main(int argc, char* argv[])
 	}
 	for (int i = 0; i < n; ++i)
 	{
-		std::cout << a[(min + i)%n] << " ";
+		std::cout << a[(min + i) % n] << " ";
 	}
 	return EXIT_SUCCESS;
 }

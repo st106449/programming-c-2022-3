@@ -18,7 +18,7 @@ int main(int argc, char* argv[])
 	double per[100];
 	for (int i = 0; i < n; ++i)
 	{
-		per [i]= 0.01*p[i];
+		per[i] = 0.01 * p[i];
 	}
 	max = per[0] * v[0];
 	int num = 0;
@@ -32,4 +32,4 @@ int main(int argc, char* argv[])
 	}
 	std::cout << num + 1;
 	return EXIT_SUCCESS;
-	}
+}

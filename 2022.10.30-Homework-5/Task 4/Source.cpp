@@ -6,7 +6,7 @@ int main(int argc, char* argv[])
 	int n = 0;
 	std::cin >> n;
 	int max = 0;
-	for (int i = 0; i <n; ++i)
+	for (int i = 0; i < n; ++i)
 	{
 		std::cin >> a[i];
 	}
@@ -14,7 +14,7 @@ int main(int argc, char* argv[])
 	{
 		if (i + 1 == n)
 		{
-			a[i+1] = a[0];
+			a[i + 1] = a[0];
 		}
 		if (i = n)
 		{

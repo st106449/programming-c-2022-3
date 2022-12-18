@@ -17,9 +17,7 @@ int main(int argc, char* argv[])
 				l = i + 1;
 				l1 = n + 1;
 			}
-			
 		}
-
 	}
 	return EXIT_SUCCESS;
 }

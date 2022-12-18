@@ -19,11 +19,11 @@ int main(int argc, char* argv[])
 		}
 		for (int i = 0; i < n; ++i)
 		{
-			for (int j = 0; j < n-i; ++j)
+			for (int j = 0; j < n - i; ++j)
 			{
 				int c = a[i][j];
-				a[i][j] = a[n-j-1][n-i-1];
-				a[n-j-1][n-i-1] = c;
+				a[i][j] = a[n - j - 1][n - i - 1];
+				a[n - j - 1][n - i - 1] = c;
 			}
 		}
 		for (int i = 0; i < n; ++i)
@@ -34,6 +34,10 @@ int main(int argc, char* argv[])
 			}
 			std::cout << std::endl;
 		}
+	}
+	for (int i = 0; i < n; ++i)
+	{
+		delete[] a[i];
 	}
 	delete[] a;
 	return EXIT_SUCCESS;

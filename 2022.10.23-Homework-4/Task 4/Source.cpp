@@ -15,17 +15,9 @@ int main(int argc, char* argv[])
 	std::cin >> e;
 	for (int x = 0; x <= 1000; x++)
 	{
-		if (x != e)
-		{
-			n = n;
-		}
-		else if (a * x * x * x + b * x * x + c * x + d == 0)
+		if (a * x * x * x + b * x * x + c * x + d == 0 && x != e)
 		{
 			++n;
-		}
-		else
-		{
-			n = n;
 		}
 	}
 	std::cout << n;

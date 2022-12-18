@@ -23,7 +23,7 @@ int main(int argc, char* argv[])
 			}
 		}
 		l = i - indMax + 1;
-		cash += l * a[indMax];	
+		cash += l * a[indMax];
 		i = indMax + 1;
 		indMax += 1;
 	}

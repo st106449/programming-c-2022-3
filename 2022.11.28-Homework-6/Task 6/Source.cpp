@@ -38,7 +38,7 @@ int main(int argc, char* argv[])
 		}
 	}
 	std::cout << std::endl;
-	if (c / 3 <= b/4)
+	if (c / 3 <= b / 4)
 	{
 		std::cout << "YES";
 	}
